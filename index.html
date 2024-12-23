@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Начало иконок с ссылками. Выбрать с сайта Google Icons любую иконку и вставить ссылку "Статический иконочный шрифт"-->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close" /> <!-- Иконка для удаления из списка -->
+
+    <!-- Конец иконок с ссылками -->
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нзвание сайта</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="flex-wrapper">
+            <div class="add-todo-wrapper">
+                <div class="input-wrapper">
+                    <input onkeydown="return checkPhoneKey(event.key)" placeholder="Нажмите Enter для добавления" type="text" id="description-task">
+                </div>
+                <div class="button-wrapper">
+                    <button id="add-task-btn">Добавить в список</button>
+                </div>
+            </div>
+            <h2>Список:</h2>
+            <div class="todos-wrapper">
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
